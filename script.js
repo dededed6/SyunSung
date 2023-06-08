@@ -55,7 +55,7 @@ function onScroll() {
         var scrollPosition = Math.round((daybox.scrollLeft - scrollCenter) / 6);
         changeDday(scrollPosition);
 
-        cooltime = time + 1000 / (1+Math.abs(scrollPosition));
+        cooltime = time + 1000 / (1+Math.abs(scrollPosition)*Math.abs(scrollPosition));
     }
     daybox.scrollTo({left: scrollCenter, behavior:"smooth"});
 }
