@@ -52,7 +52,7 @@ var cooltime = 0;
 function onScroll() {
     var time = new Date().getTime();
     if (time > cooltime) {
-        var scrollPosition = Math.round((daybox.scrollLeft - scrollCenter) / 6);
+        var scrollPosition = Math.round((daybox.scrollLeft - scrollCenter) / 2);
         changeDday(scrollPosition);
 
         cooltime = time + 1000 / (1+Math.abs(scrollPosition)*Math.abs(scrollPosition));
