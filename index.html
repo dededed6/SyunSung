@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <link href="images/icon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>SyunSung</title>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="container">
+        <p style="background-color: black; color:white; font-style: italic; font-size: 8vh; margin-top: 0%;">SyunSung</p>
+    </div>
+        <!--
+        <p style="padding: 0%; font-size: 3vh; -webkit-text-stroke: 0.15vh black;">BGM</p>
+        <iframe width="96vh" height="54vh" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLN29PNMEdVhwMw_Zl2fapizKn82mfESe2" title="SyunSung BGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        -->
+    <div class="container" style="background-color: #C6DFF5; overflow: auto; width: 100%;" id="daybox" onscroll="onScroll();">
+        <p style="width:110%;">오늘은...</p>
+        <p style="margin-top: 0%; font-size: 16vh; color: white; width: 110%;" id="day">0일</p>
+        <p style="width: 110%; font-size: 4vh;" id="date">2023-04-17</p>
+    </div>
+    <div class="container">
+        <p>D Memorys</p>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
